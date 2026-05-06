@@ -43,9 +43,9 @@ Complete el código C++ del recorrido inorden:
 ```cpp
 void inorden(Nodo* raiz) {
     if (raiz == nullptr) return;
-    _____________(raiz->izquierda);
+    _inorden_(raiz->izquierda);
     cout << raiz->dato << " ";
-    _____________(raiz->derecha);
+    _inorden_(raiz->derecha);
 }
 ```
 

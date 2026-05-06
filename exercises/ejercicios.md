@@ -40,8 +40,53 @@ Modifique el árbol anterior agregando los nodos 1, 3, 18 y 25. Ejecute nuevamen
 ## Ejercicio 3
 Implemente una función que cuente la cantidad total de nodos del árbol.
 
+En C++
+```text
+    int contarNodos(Nodo* raiz) {
+        if (raiz == nullptr)
+         return 0;
+
+        return 1 + contarNodos(raiz->izquierda) + contarNodos(raiz->derecha);
+    }
+```
+En Java
+```text
+    public static int contarNodos(Nodo raiz) {
+    if (raiz == null) 
+    return 0;
+
+    return 1 + contarNodos(raiz.izquierda) + contarNodos(raiz.derecha);
+    }
+```
+Si el nodo es nulo retorna 0. Si no, cuenta 1 (el nodo actual) más todos los nodos del subárbol izquierdo y derecho recursivamente. Con el árbol del ejercicio 1 retorna 7.
+
 ## Ejercicio 4
 Implemente una función que cuente las hojas del árbol.
+En C++
+```text
+    int contarHojas(Nodo* raiz) {
+    if (raiz == nullptr) 
+    return 0;
+
+    if (raiz->izquierda == nullptr && raiz->derecha == nullptr) 
+    return 1;
+
+    return contarHojas(raiz->izquierda) + contarHojas(raiz->derecha);
+    }
+```
+En Java
+```text
+    public static int contarHojas(Nodo raiz) {
+    if (raiz == null) 
+    return 0;
+
+    if (raiz.izquierda == null && raiz.derecha == null) 
+    return 1;
+
+    return contarHojas(raiz.izquierda) + contarHojas(raiz.derecha);
+    }
+```
+Si el nodo es nulo retorna 0. Si el nodo no tiene hijos izquierdo ni derecho es una hoja y retorna 1. De lo contrario suma las hojas del subárbol izquierdo y derecho.
 
 ## Ejercicio 5 aplicado al proyecto final
 Represente los módulos de un sistema web como un árbol binario. Ejemplo:
@@ -57,5 +102,8 @@ Represente los módulos de un sistema web como un árbol binario. Ejemplo:
 Explique qué recorrido usaría para:
 
 1. Mostrar el menú principal.
+   Preorden porque visita primero la raíz antes que los submenús
 2. Procesar primero los módulos internos.
+   Postorden porque procesa primero los hijos antes que el padre
 3. Mostrar módulos nivel por nivel.
+   BFS porque recorre el árbol nivel a nivel usando una cola

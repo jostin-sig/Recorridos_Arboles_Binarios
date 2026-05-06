@@ -61,6 +61,13 @@ int main() {
     raiz->derecha->izquierda = new Nodo(12);
     raiz->derecha->derecha = new Nodo(20);
 
+    raiz->izquierda->izquierda->izquierda = new Nodo(1);  // hijo izq de 2
+    raiz->izquierda->izquierda->derecha = new Nodo(3);    // hijo der de 2
+    raiz->izquierda->derecha->derecha = new Nodo(8);      // hijo der de 7
+    raiz->derecha->derecha->izquierda = new Nodo(18);     // hijo izq de 20
+    raiz->derecha->derecha->derecha = new Nodo(25);       // hijo der de 20
+
+
     cout << "RECORRIDOS DE ARBOLES BINARIOS - UTA C++" << endl;
 
     cout << "Preorden: ";

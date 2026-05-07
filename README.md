@@ -14,6 +14,14 @@
 
 ---
 
+## Introducción
+
+Los árboles binarios son estructuras de datos jerárquicas utilizadas para organizar información de manera eficiente.
+
+En esta práctica se implementaron los recorridos Inorden, Preorden, Postorden y BFS utilizando C++ y Java, aplicando recursividad y colas dinámicas.
+
+---
+
 ## Objetivo general
 Implementar y analizar los principales recorridos de árboles binarios utilizando C++ y Java, aplicando estructuras de datos dinámicas, recursividad y colas.
 
@@ -43,6 +51,28 @@ Al finalizar la práctica, el estudiante será capaz de:
 
 ---
 
+## Creación del Repositorio
+Se creó exitosamente el repositorio público Recorridos_Arboles_Binarios en la plataforma GitHub. 
+
+![Repositorio](assets/Creacion_repositorio.png)
+
+---
+
+# Historial de commits
+Se realizaron commits progresivos que evidencian el desarrollo por etapas del proyecto
+
+![Commits](assets/commits.png)
+
+---
+
+# Estructura del proyecto
+Esta estructura permitió mantener orden entre código
+
+![Estructura](assets/estructura.png)
+
+---
+
+
 ## Estructura del árbol implementado
  
 ```
@@ -63,8 +93,8 @@ Nodos nuevos agregados: 1, 3, 8, 18, 25
 
 | Recorrido | Orden | Resultados obtenidos|
 |---|---|---|
-| Inorden | Izquierda → Raíz → Derecha | 10 5 2 1 3 7 8 15 12 20 18 25 |
-| Preorden | Raíz → Izquierda → Derecha |  1 2 3 5 7 8 10 12 15 18 20 25 |
+| Preorden | Izquierda → Raíz → Derecha | 10 5 2 1 3 7 8 15 12 20 18 25 |
+| Inorden | Raíz → Izquierda → Derecha |  1 2 3 5 7 8 10 12 15 18 20 25 |
 | Postorden | Izquierda → Derecha → Raíz | 1 3 2 8 7 5 12 18 25 20 15 10 |
 | BFS | Nivel por nivel usando cola | 10 5 15 2 7 12 20 1 3 8 18 25 |
 
@@ -93,10 +123,14 @@ java Main
 ### C++
 ![Ejecucion C++](assets/cpp.png)
 
+Agremos los 5 nodos nuevos
+
 ![Ejecucion C++ Nodos nuevos](assets/cpp_nodos_nuevos.png)
  
 ### Java
 ![Ejecucion Java](assets/java.png)
+
+Agregamos los 5 nodos nuevos
 
 ![Ejecucion Java Nodos nuevos](assets/java_nodos_nuevos.png)
  

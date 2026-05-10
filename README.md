@@ -291,6 +291,19 @@ En la generación de menús de navegación donde se muestra primero la opción p
 En la eliminación de nodos liberando primero los hijos antes que el padre para evitar pérdida de referencias. También en el cálculo del tamaño de carpetas donde se suman primero las subcarpetas antes de calcular el total de la carpeta principal.
  
 ---
+## Uso de IA
+
+Durante el desarrollo de esta práctica el grupo utilizó 
+inteligencia artificial (Claude de Anthropic — claude.ai) 
+como herramienta de apoyo para las siguientes actividades:
+
+- Comprender conceptos teóricos de recorridos DFS y bfs
+- Agregar los 5 nodos nuevos al código C++ y Java
+- Corregir errores de sintaxis, optimizar la redacción del informe
+- Estructurar la documentación del README
+- Verificar la coherencia entre los códigos y los resultados
+
+---
 
 ## Conclusiones
 Los recorridos de árboles binarios permiten recorrer estructuras jerárquicas de diferentes maneras según la necesidad del problema.
